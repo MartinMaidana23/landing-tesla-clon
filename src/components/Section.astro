@@ -1,0 +1,38 @@
+---
+const {color, title, subtitle, fontSize, underline, cursor} = Astro.props
+const textColor = `text-${color}`
+const cursorStyle = `cursor-${cursor}`
+const font = `text-${fontSize}`
+---
+
+
+<section
+    class="h-screen w-screen text-center relative overflow-hidden landing-section"
+    data-header-color={color}
+    >
+
+    <div class="z-30  h-full flex flex-col relative">
+        <header class="flex flex-col ">
+
+            <h2 class={`${textColor} pt-40 text-[40px] font-medium`}>
+                {title}
+            </h2>
+
+            <p class={`text-${fontSize} ${textColor}  ${underline ? "underline" : ""} ${cursorStyle}`} >
+                {subtitle}
+            </p>
+
+        </header>
+        
+        <footer class="flex flex-col flex-grow flex-nowrap justify-end pb-20">
+            <slot
+                name="footer"
+            />
+        </footer>
+    </div>
+
+    <slot
+        name="background"
+    />
+
+</section>

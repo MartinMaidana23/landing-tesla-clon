@@ -4,26 +4,27 @@ import Section from "./Section.astro";
 ---
 
 <Section
-    title="Model 3"
-    subtitle="Starting at $32,740"
-    color="black"
+    title="Solar Panels"
+    subtitle="Schedule a Virtual Consultation"
+    underline={true}
     fontSize="base"
+    cursor="pointer"
 >
 
     <div class="flex gap-x-6 mx-auto" slot="footer" >
 
         <a href="#"
         class=" border-[3px] border-gray-600 bg-gray-600 text-sm rounded font-medium text-white   px-12 py-2 hover:bg-black hover:text-white hover:border-black  transition-colors ">
-            Explore Inventory
+            Order Now
         </a>
 
         <a href="#" class="border-[3px] border-white bg-white text-black text-sm rounded font-medium  px-12 py-2 flex justify-center items-center hover:border-black hover:bg-black hover:text-white transition-colors ">
-            Custom Order
+            Learn More
         </a>
     </div>
 
-    <div class="absolute top-0 bottom-0 z-10 h-screen w-screen" slot="background">
-        <img src="/model3.avif" alt="Model 3" class="h-full w-full object-cover object-center">
+    <div class="absolute top-0 bottom-0 z-10 h-full w-full" slot="background">
+        <img src="/solarPanel.avif" alt="Solar Panel" class="h-full w-full object-cover object-center">
     </div>
 
 </Section>

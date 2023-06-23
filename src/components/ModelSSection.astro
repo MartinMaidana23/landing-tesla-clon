@@ -4,10 +4,12 @@ import Section from "./Section.astro";
 ---
 
 <Section
-    title="Model 3"
-    subtitle="Starting at $32,740"
+    title="Model S"
+    subtitle="Explore Inventory"
     color="black"
     fontSize="base"
+    underline={true}
+    cursor="pointer"
 >
 
     <div class="flex gap-x-6 mx-auto" slot="footer" >
@@ -22,8 +24,8 @@ import Section from "./Section.astro";
         </a>
     </div>
 
-    <div class="absolute top-0 bottom-0 z-10 h-screen w-screen" slot="background">
-        <img src="/model3.avif" alt="Model 3" class="h-full w-full object-cover object-center">
+    <div class="absolute top-0 bottom-0 z-10 h-full w-full" slot="background">
+        <img src="/modelS.avif" alt="Model S" class="h-full w-full object-cover object-center">
     </div>
 
 </Section>
