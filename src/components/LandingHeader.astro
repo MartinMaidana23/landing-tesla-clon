@@ -11,7 +11,7 @@ import Logo from "./Logo.astro";
         <Logo/>
     </div>
 
-    <div class="lg:hidden" id="hamburger-menu">
+    <div class=" lg:hidden" id="hamburger-menu">
         <button class="navbar-burger flex items-center text-current">
             <svg class="block h-4 w-4 fill-current" viewBox="0 0 20 20" xmlns="http://www.w3.org/2000/svg">
                 <title>Mobile menu</title>
@@ -20,9 +20,9 @@ import Logo from "./Logo.astro";
         </button>
     </div>
 
-    <nav>
+    <nav class="hidden absolute top-10 right-1  bg-white lg:relative lg:bg-white/0 lg:top-0 lg:flex" >
         <ul
-         class="hidden lg:flex text-sm [&>li>a]:text-current [&>li>a]:font-medium [&>li>a]:inline-block [&>li>a]:px-4 [&>li>a]:py-2 transition-colors duration-500" 
+         class="flex flex-col w-32 items-center text-xs [&>li>a]:text-black [&>li>a]:font-medium [&>li>a]:inline-block [&>li>a]:px-4 [&>li>a]:py-2 transition-colors duration-500 lg:flex-row lg:text-sm lg:[&>li>a]:text-current lg:w-auto" 
          >
             <li><a href="#">Model S</a></li>
             <li><a href="#">Model 3</a></li>
@@ -33,9 +33,9 @@ import Logo from "./Logo.astro";
         </ul>
     </nav>
 
-    <nav class="flex flex-grow justify-end basis-0">
+    <nav class="hidden absolute top-[230px] right-1  bg-white  flex-grow justify-end basis-0 lg:flex lg:relative lg:bg-white/0 lg:top-0">
         <ul
-         class="hidden lg:flex text-sm [&>li>a]:text-current [&>li>a]:font-medium [&>li>a]:inline-block [&>li>a]:px-4 [&>li>a]:py-2 transition-colors duration-500">
+         class="flex flex-col w-32 items-center text-xs [&>li>a]:text-black [&>li>a]:font-medium [&>li>a]:inline-block [&>li>a]:px-4 [&>li>a]:py-2 transition-colors duration-500 lg:flex-row lg:text-sm lg:[&>li>a]:text-current lg:w-auto">
             <li><a href="#">Soporte</a></li>
             <li><a href="#">Tienda</a></li>
             <li><a href="#">Menu</a></li>
